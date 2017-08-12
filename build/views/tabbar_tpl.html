@@ -1,0 +1,16 @@
+<div class="tabbar">
+    <ul>
+        <li ng-class="{active:type == 'home'}" ng-click="tabChange('home')">
+            <p><img ng-src="images/{{type=='home'?'homeSel.png':'home_icon.png'}}" alt=""></p>首页
+        </li>
+        <li ng-class="{active:type == 'author'}" ng-click="tabChange('author')">
+            <p><img ng-src="images/{{type=='author'?'authorSel.png':'author_icon.png'}}" alt=""></p>作者
+        </li>
+        <li ng-class="{active:type == 'content'}" ng-click="tabChange('content')">
+            <p><img ng-src="images/{{type=='content'?'contentSel.png':'content_icon.png'}}" alt=""></p>栏目
+        </li>
+        <li ng-class="{active:type == 'my'}" ng-click="tabChange('my')">
+            <p><img ng-src="images/{{type=='my'?'mySel.png':'my_icon.png'}}" alt=""></p>我的
+        </li>
+    </ul>
+</div>
